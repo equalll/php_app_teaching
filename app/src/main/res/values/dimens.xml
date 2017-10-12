@@ -1,0 +1,85 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="statusbar_view_height">0dp</dimen>
+    <dimen name="fate_top_height">35dp</dimen>
+
+    <dimen name="title_height">48dp</dimen>
+    <dimen name="CommonTabLayout_height">48dp</dimen>
+
+
+    <!-- item 通用的一些属性 -->
+    <dimen name="item_general_height_small">40dp</dimen>
+    <dimen name="item_general_height">48dp</dimen>
+    <dimen name="item_general_left_pidding">15dp</dimen>
+    <dimen name="item_general_right_pidding">15dp</dimen>
+    <dimen name="item_general_drawable_pidding">8dp</dimen>
+
+
+    <!--dialog radius-->
+    <dimen name="dialog_radius">8dp</dimen>
+    <dimen name="dialog_pos_neg_btn_radius">6dp</dimen>
+
+    <!--progressBar margin-->
+    <dimen name="progressbar_margin">5dp</dimen>
+
+    <!-- 通用 line 高度-->
+    <dimen name="general_line_height">1px</dimen>
+    <dimen name="general_crude_line_height">10dp</dimen>
+
+    <!-- 通用字号 -->
+    <dimen name="general_font_title">16sp</dimen>
+    <dimen name="general_font_size_super_large">18sp</dimen>
+    <dimen name="general_font_size_big2">16sp</dimen>
+    <dimen name="general_font_size_big">15sp</dimen>
+    <dimen name="general_font_size_normal">14sp</dimen>
+    <dimen name="general_font_size_small">13sp</dimen>
+    <dimen name="general_font_size_default">12sp</dimen>
+
+    <dimen name="data_information_item_padding_big">20dp</dimen>
+    <dimen name="data_information_item_padding_small">15dp</dimen>
+    <dimen name="data_information_text_padding">8dp</dimen>
+    <dimen name="data_information_line_height">10dp</dimen>
+
+
+    <dimen name="ownalbum_sp_20">14sp</dimen>
+    <dimen name="ownalbum_sp_50">50sp</dimen>
+    <dimen name="dp_5">5dp</dimen>
+    <dimen name="dp_2.5">2.5dp</dimen>
+
+    <dimen name="photoview_status_bar_height">25dp</dimen>
+
+    <!--menu通用字号-->
+    <dimen name="menu_default_size">16sp</dimen>
+    <!-- 通用 Button 高度 -->
+    <dimen name="general_button_height">45dp</dimen>
+    <dimen name="general_button_height_small">40dp</dimen>
+    <dimen name="general_button_font_size">16sp</dimen>
+
+    <!-- banner -->
+    <dimen name="default_indicator_size">8dp</dimen>
+    <dimen name="default_indicator_margins">5dp</dimen>
+    <dimen name="default_dash_indicator_width">12dp</dimen>
+    <dimen name="round_square_indicator_radius">2dp</dimen>
+    <dimen name="max_slider_indicator_size">16dp</dimen>
+
+    <!-- 选项文字大小 需要配合 bools.xml 的 pickerview_customTextSize 为 true 才有效果-->
+    <dimen name="pickerview_textsize">20sp</dimen>
+
+    <!-- SwitchButton -->
+    <dimen name="ksw_md_thumb_ripple_size">42dp</dimen>
+    <dimen name="ksw_md_thumb_solid_inset">11dp</dimen>
+    <dimen name="ksw_md_thumb_shadow_inset">11dp</dimen>
+    <dimen name="ksw_md_thumb_shadow_inset_top">11dp</dimen>
+    <dimen name="ksw_md_thumb_shadow_inset_bottom">10dp</dimen>
+    <dimen name="ksw_md_thumb_solid_size">20dp</dimen>
+    <dimen name="ksw_md_thumb_shadow_size">21dp</dimen>
+    <dimen name="ksw_md_thumb_shadow_offset">2dp</dimen>
+
+    <dimen name="min_panel_height">220dp</dimen>
+    <dimen name="max_panel_height">380dp</dimen>
+    <dimen name="min_keyboard_height">80dp</dimen>
+    <dimen name="banner_slider_settings_margin">20dp</dimen>
+
+</resources>

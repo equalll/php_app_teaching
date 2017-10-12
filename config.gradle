@@ -1,0 +1,66 @@
+ext {
+
+    android = [
+            compileSdkVersion: 26,
+            buildToolsVersion: "26.0.0",
+            minSdkVersion    : 15,
+            targetSdkVersion : 26,
+            versionCode      : 15,
+            versionName      : "1.0.0"
+    ]
+
+    dependVersion = [
+            support: "25.3.1"
+    ]
+
+    dependencies = [
+            // ------------- Android -------------
+            supportV4            : "com.android.support:support-v4:${dependVersion.support}",
+            appcompatV7          : "com.android.support:appcompat-v7:${dependVersion.support}",
+            design               : "com.android.support:design:${dependVersion.support}",
+            recyclerView         : "com.android.support:recyclerview-v7:${dependVersion.support}",
+            junit                : "junit:junit:4.12",
+
+            //------------- 测试 -------------
+            espresso             : "com.android.support.test.espresso:espresso-core:2.2.2",
+
+            // ------------- 网络请求 -------------
+            retrofit             : 'com.squareup.retrofit2:retrofit:2.1.0',
+
+            //-------------- gson ---------------
+            retrofit_gson        : 'com.squareup.retrofit2:converter-gson:2.0.2',
+
+            // ------------- 图片加载 -------------
+            glide                : 'com.github.bumptech.glide:glide:3.8.0',
+
+            // ------------- log打印工具 -------------
+            logger               : 'com.orhanobut:logger:1.15',
+
+            //-------------- 侧滑退出 Activity ------------
+            sideslipExitActivity : 'com.r0adkll:slidableactivity:2.0.5',
+
+            // ------------- ButterKnife -------------
+            butterknife          : 'com.jakewharton:butterknife:8.4.0',
+            butterknifeCompiler  : 'com.jakewharton:butterknife-compiler:8.4.0',
+
+            // ------------- reboun 这个库缘分View使用了这个库，动画库-------------
+            rebound              : 'com.facebook.rebound:rebound:0.3.8',
+
+            // ------------- 权限处理库 -------------
+            easypermissions      : 'pub.devrel:easypermissions:0.4.0',
+
+
+            //------------  方法越界 --------------
+            multidex             : 'com.android.support:multidex:1.0.0',
+
+            // ------------- View -------------
+            constraintLayout     : 'com.android.support.constraint:constraint-layout:1.0.2',
+
+            //---------------极光推送和统计-------------------
+            jpush                : 'cn.jiguang.sdk:jpush:3.0.5',
+            jcore                : 'cn.jiguang.sdk:jcore:1.1.2',
+            janalytics           : 'cn.jiguang.sdk:janalytics:1.1.1',
+
+
+    ]
+}

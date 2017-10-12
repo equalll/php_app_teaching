@@ -1,0 +1,121 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Activity 跳转动画，可自定义或删除 -->
+        <item name="android:windowAnimationStyle">@style/AnimationActivity</item>
+        <!-- 以下参数应用在侧滑退出 Activity 上的配置 -->
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <!-- application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!--  为应用栏（App Bar）应用你的品牌色 -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <!--  为状态栏（status bar）和上下文应用栏(contextual app bar)提供深色醒目色 -->
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!--EditText没有获取焦点的时候底线显示的颜色-->
+        <!--  <item name="android:textColorSecondary">@color/gray_text_line</item>-->
+        <item name="toolbarStyle">@style/MyToolbarStyle</item>
+    </style>
+
+    <!-- Main theme ； MainActivity（栈底的 Activity ） 中不要 windowIsTranslucent ，会出现如下问题：按 home 间键会闪 ，切换动画无效-->
+    <style name="MainAppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!--  为应用栏（App Bar）应用你的品牌色 -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <!--  为状态栏（status bar）和上下文应用栏(contextual app bar)提供深色醒目色 -->
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!--EditText没有获取焦点的时候底线显示的颜色-->
+        <!--  <item name="android:textColorSecondary">@color/gray_text_line</item>-->
+        <item name="toolbarStyle">@style/MyToolbarStyle</item>
+        <item name="windowNoTitle">true</item>
+        <!-- Activity 跳转动画，可自定义或删除 -->
+        <item name="android:windowAnimationStyle">@style/AnimationActivity</item>
+        <item name="android:windowDisablePreview">true</item>
+    </style>
+
+    <!-- Activity 跳转动画，可在对应文件中修改动画属性
+   当我们从 A1 启动 A2 时，A1 从屏幕上消失，这个动画叫做 android:activityOpenExitAnimation
+   当我们从 A1 启动 A2 时，A2 出现在屏幕上，这个动画叫做 android:activityOpenEnterAnimation
+   当我们从 A2 退出回到 A1 时，A2 从屏幕上消失，这个叫做 android:activityCloseExitAnimation
+   当我们从 A2 退出回到 A1 时，A1 出现在屏幕上，这个叫做 android:activityCloseEnterAnimation
+    -->
+    <style name="AnimationActivity" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/anim_activity_open_enter</item>
+        <item name="android:activityOpenExitAnimation">@anim/anim_activity_open_exit</item>
+        <item name="android:activityCloseEnterAnimation">@anim/anim_activity_close_enter</item>
+        <item name="android:activityCloseExitAnimation">@anim/anim_activity_close_exit</item>
+    </style>
+
+
+    <style name="setting">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">16dp</item>
+        <item name="android:paddingBottom">16dp</item>
+        <item name="android:paddingLeft">@dimen/activity_horizontal_margin</item>
+        <item name="android:paddingRight">@dimen/activity_horizontal_margin</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">?android:textColorSecondary</item>
+    </style>
+
+    <style name="AlertDialogStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="tv_comment_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/gray_7c7c7c</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:layout_marginTop">15dp</item>
+    </style>
+
+    <style name="header_layout_textview">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxWidth">200.0dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/light_black</item>
+        <item name="android:textSize">@dimen/general_font_title</item>
+    </style>
+
+    <style name="ActionSheetDialogStyle" parent="android:Theme.Dialog">
+        <!-- 背景透明 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- 浮于Activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- Dialog以外的区域模糊效果 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- Dialog进入及退出动画 -->
+        <item name="android:windowAnimationStyle">@style/ActionSheetDialogAnimation</item>
+    </style>
+
+    <!-- ActionSheet进出动画 -->
+    <style name="ActionSheetDialogAnimation" parent="@android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/action_sheet_dialog_in</item>
+        <item name="android:windowExitAnimation">@anim/action_sheet_dialog_out</item>
+    </style>
+
+</resources>

@@ -1,0 +1,77 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion "26.0.0"
+    defaultConfig {
+        applicationId "com.wiggins.teaching"
+        minSdkVersion 15
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        //++++++++++++++++++++++++++ 极光推送 start ++++++++++++++++++++++++++++++++++
+        ndk {
+            //选择要添加的对应cpu类型的.so库。
+            abiFilters 'armeabi', 'armeabi-v7a', 'arm64-v8a', 'x86'
+//            , 'x86_64', 'mips', 'mips64'
+        }
+
+        manifestPlaceholders = [
+                JPUSH_PKGNAME: "com.wiggins.teaching",
+                JPUSH_APPKEY : "cd82f4c316f53232010dda5b", //JPush上注册的包名对应的appkey.
+                JPUSH_CHANNEL: "singwa", //用户渠道统计的渠道名称
+        ]
+        //++++++++++++++++++++++++++ 极光推送 end ++++++++++++++++++++++++++++++++++
+
+        //方法数超上限配置
+        multiDexEnabled true
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+
+    signingConfigs {
+        release {
+            storeFile file("release.keystore")
+            keyAlias "wiggins"
+            keyPassword "aq2222222"
+            storePassword "aq2222222"
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+    }
+
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    testCompile 'junit:junit:4.12'
+    compile project(':lib_appframe_base')
+    compile 'com.aurelhubert:ahbottomnavigation:2.0.6'
+    compile project(':FlycoTabLayout_Lib')
+    compile project(':lib_recycler_view')
+    //butterKnife 注解
+    compile rootProject.ext.dependencies.butterknife
+    annotationProcessor rootProject.ext.dependencies.butterknifeCompiler
+    //权限库
+    compile rootProject.ext.dependencies.easypermissions
+    //极光推送和统计
+    compile rootProject.ext.dependencies.jpush
+    compile rootProject.ext.dependencies.jcore
+    compile rootProject.ext.dependencies.janalytics
+    compile rootProject.ext.dependencies.multidex
+}

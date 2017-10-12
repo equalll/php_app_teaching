@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/CommonTabLayout_height"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/ibtn_search"
+            android:layout_width="@dimen/CommonTabLayout_height"
+            android:layout_height="@dimen/CommonTabLayout_height"
+            android:layout_gravity="center_vertical"
+            android:background="@null"
+            android:src="@drawable/ic_seach" />
+
+        <com.flyco.tablayout.CommonTabLayout
+            android:id="@+id/ctl_microblog"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/CommonTabLayout_height"
+            android:layout_marginRight="10dp"
+            tl:tl_iconVisible="false"
+            tl:tl_indicator_color="#2877C6"
+            tl:tl_indicator_width="@dimen/CommonTabLayout_height"
+            tl:tl_textSelectColor="#313131"
+            tl:tl_textUnselectColor="#909090"
+            tl:tl_textsize="@dimen/menu_default_size" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_dynamic"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

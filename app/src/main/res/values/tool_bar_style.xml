@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--设置ToolBar返回键icon-->
+    <style name="MyToolbarStyle" parent="@style/Widget.AppCompat.Toolbar">
+    </style>
+
+    <!--设置ToolBar menu 样式-->
+    <style name="MyToolbarTheme" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <!--<item name="colorControlNormal">@android:color/white</item>-->
+        <item name="actionMenuTextAppearance">@style/MenuTextStyle</item>
+    </style>
+
+    <!--ToolBar menu 上字体风格-->
+    <style name="MenuTextStyle">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <!--ToolBar title 大小-->
+    <style name="Toolbar.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+</resources>

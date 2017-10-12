@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="BannerSlider">
+        <attr name="indicatorSize" format="dimension" />
+        <attr name="selected_slideIndicator" format="reference" />
+        <attr name="unselected_slideIndicator" format="reference" />
+        <attr name="defaultIndicators" format="integer">
+            <enum name="circle" value="0" />
+            <enum name="square" value="1" />
+            <enum name="round_square" value="2"/>
+            <enum name="dash" value="3"/>
+        </attr>
+        <attr name="animateIndicators" format="boolean"/>
+        <attr name="interval" format="integer"/>
+        <attr name="loopSlides" format="boolean"/>
+        <attr name="defaultBanner" format="integer"/>
+        <attr name="emptyView" format="reference"/>
+        <attr name="hideIndicators" format="boolean"/>
+    </declare-styleable>
+
+    <!--        SelectableRoundedImageView       -->
+    <declare-styleable name="SelectableRoundedImageView">
+        <attr name="sriv_left_top_corner_radius" format="dimension" />
+        <attr name="sriv_right_top_corner_radius" format="dimension" />
+        <attr name="sriv_left_bottom_corner_radius" format="dimension" />
+        <attr name="sriv_right_bottom_corner_radius" format="dimension" />
+        <attr name="sriv_border_width" format="dimension" />
+        <attr name="sriv_border_color" format="color" />
+        <attr name="sriv_oval" format="boolean" />
+        <attr name="android:scaleType" />
+    </declare-styleable>
+
+    <declare-styleable name="pickerview">
+        <attr name="pickerview_gravity">
+            <enum name="center" value="17" />
+            <enum name="left" value="3" />
+            <enum name="right" value="5" />
+        </attr>
+        <attr name="pickerview_textSize" format="dimension" />
+        <attr name="pickerview_textColorOut" format="color" />
+        <attr name="pickerview_textColorCenter" format="color" />
+        <attr name="pickerview_dividerColor" format="color" />
+        <attr name="pickerview_lineSpacingMultiplier" format="float" />
+    </declare-styleable>
+</resources>

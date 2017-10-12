@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#FFFFFF</color>
+    <color name="colorAccent">#2A90D7</color>
+
+    <color name="theme_background">#ffffff</color>
+
+    <color name="item_general_font_gray">#999999</color>
+
+    <!-- NumberPickerView 未选中的 item 颜色 ；根据需求定义颜色-->
+    <color name="number_picker_view_item_color">#737373</color>
+    <!-- NumberPickerView 选中 item 颜色 ；根据需求定义颜色-->
+    <color name="number_picker_view_value_color">#718cd1</color>
+    <!-- NumberPickerView 分割线颜色 ；根据需求定义颜色-->
+    <color name="number_picker_view_divider_color">#ececec</color>
+
+    <!-- 主题橙 -->
+    <color name="style_orange">#ffae5e</color>
+
+    <!-- 默认状态栏颜色 -->
+    <color name="status_bar_color">#1f1f1f</color>
+
+    <!-- 默认占位图用该色值 -->
+    <color name="default_bitmap_color">#f0f0f0</color>
+
+    <color name="transparent">#00000000</color>
+    <!--60%透明-->
+    <color name="half_transparent">#99000000</color>
+
+    <color name="find_class_translucent">#4d000000</color>
+    <color name="white">#ffffffff</color>
+    <color name="black">#ff000000</color>
+    <color name="golden">#ffae5e</color>
+    <color name="light_black">#333333</color>
+    <color name="gray">#818181</color>
+    <color name="gray_7c7c7c">#7c7c7c</color>
+    <color name="dynamic_content_gray">#646464</color>
+    <color name="dynamic_city_gray">#999999</color>
+    <color name="dynamic_zan_gray">#bbbbbb</color>
+    <color name="line">#F5F5F5</color>
+    <color name="comment_line">#e1e1e1</color>
+    <color name="comment_text">#999999</color>
+
+    <color name="alert_dialog_line">#c6c6c6</color>
+    <color name="action_sheet_blue">#037BFF</color>
+    <color name="action_sheet_red">#FD4A2E</color>
+    <color name="action_sheet_gray">#8F8F8F</color>
+    <color name="dialog_selected_bg">#e9e9e9</color>
+    <color name="hint_blue">#5072A1</color>
+
+    <!-- 消息 -->
+    <color name="chat_name_black">#333333</color>
+    <color name="chat_smg_gray">#9f9f9f</color>
+    <color name="chat_unread_message_bg">#ff5050</color>
+    <color name="chat_search_keyword">#ffae5e</color>
+    <color name="chat_marked_read">#C7C7CC</color>
+    <color name="chat_delete">#FF3B30</color>
+
+    <!-- 发现 -->
+    <color name="find_class_room_tag">#ff7151</color>
+
+    <!--ripple-->
+    <color name="ripple_color">#c6c6c6</color>
+    <!-- 个人模块 -->
+    <color name="personal_theme_bg">#f4f4f3</color>
+    <color name="personal_username_black">#333333</color>
+    <color name="personal_smallfont_gray">#a8a8a8</color>
+    <color name="personal_smallfont_gray2">#999999</color>
+    <color name="personal_line">#f4f4f3</color>
+    <color name="personal_authentication">#94A5AD</color>
+    <color name="share_platform_color">#666666</color>
+    <!-- 资料 -->
+    <color name="information_header_gray">#9f9f9f</color>
+    <color name="information_black">#333333</color>
+    <color name="information_dark_grey">#515151</color>
+    <color name="information_grey">#7c7c7c</color>
+    <color name="information_thick_line">#f4f4f3</color>
+    <color name="information_right">#999999</color>
+    <color name="information_right_red">#ff5050</color>
+    <color name="information_f4">#f4f4f3</color>
+    <color name="information_interest_tip">#848484</color>
+    <!-- 内心独白 展开/收起 颜色 -->
+    <color name="information_expansion_shrink">#596C96</color>
+    <!-- picker dialog -->
+    <color name="dialog_blue">#1582ff</color>
+    <color name="dialog_black">#2f2f2f</color>
+    <color name="dialog_grey">#acacac</color>
+
+
+    <color name="blue">#45B2FF</color>
+
+    <!-- 标签控件背景 -->
+    <color name="tag_background">#f5f5f5</color>
+    <color name="tag_delete_bg">#ff4a57</color>
+
+    <!--Search-->
+    <color name="ef_line">#efefef</color>
+    <color name="ec_line">#ececec</color>
+    <color name="three_f_black">#333333</color>
+
+    <color name="myalbum_nonophoto_text_color">#999999</color>
+
+    <color name="soild">#DADADA</color>
+    <color name="text_hui">#959595</color>
+    <color name="btn_text_color">#232426</color>
+    <color name="orange">#ffae5e</color>
+    <color name="green">#BDE75A</color>
+    <color name="hinttext_color">#B3B3B3</color>
+    <color name="un_login_btn">#cecece</color>
+    <!-- 灰色 -->
+    <color name="grey">#808080</color>
+    <color name="login_btn">#ffae5e</color>
+
+    <color name="pinkff6e7a">#ff6e7a</color>
+    <color name="spink">#F6415F</color>
+
+    <!-- 登录注册 -->
+    <color name="btn_login_bg">#50000000</color>
+    <color name="btn_register_bg">#50ffffff</color>
+    <!-- 验证码 -->
+    <color name="default_indicator_color_selected">#eeee</color>
+    <color name="default_indicator_color_unselected">#66eeeeee</color>
+
+    <!-- SwitchButton -->
+    <color name="ksw_md_ripple_normal">#1E000000</color>
+    <color name="ksw_md_ripple_checked">#33ffae5e</color>
+    <color name="ksw_md_solid_shadow">#33000000</color>
+    <color name="ksw_md_solid_normal">#ECECEC</color>
+    <color name="ksw_md_solid_checked">#ffae5e</color>
+    <color name="ksw_md_solid_disable">#FFFFFF</color>
+    <color name="ksw_md_solid_checked_disable">#aaaaaa</color>
+
+    <!--实名认证 字体颜色-->
+    <color name="text_color">#565656</color>
+    <!-- 亮金黄色 -->
+    <color name="linen">#ececec</color>
+    <color name="item_border_color">#dadada</color>
+    <color name="item_border_color_p">#f1f0f0</color>
+    <color name="item_border_color_n">#ffffff</color>
+
+
+    <!--芝麻认证相关颜色-->
+    <color name="userlevels2">#FCAB05</color>
+
+    <color name="jiaocha_start">#f4643b</color>
+    <color name="jiaocha_end">#e85056</color>
+
+    <color name="zhongdeng_start">#f89d04</color>
+    <color name="zhongdeng_end">#f67106</color>
+
+    <color name="lianghao_start">#93d340</color>
+    <color name="lianghao_end">#26b02b</color>
+
+    <color name="youxiu_start">#02d5ae</color>
+    <color name="youxiu_end">#03bcc4</color>
+
+    <color name="jihao_start">#47e3d3</color>
+    <color name="jihao_end">#009deb</color>
+
+    <!--缘分引导-->
+    <color name="bg_red">#ff3c3c</color>
+    <color name="bg_tv_red">#ff5050</color>
+
+    <!-- 活动详情 -->
+    <color name="touming">#e0000000</color>
+    <color name="sousuo_text">#f6b25f</color>
+    <color name="bg_color">#F6F6F6</color>
+    <color name="tabtext">#888888</color>
+    <color name="find_title">#A19E95</color>
+    <color name="orange_F9CD9C">#F8C48A</color>
+
+    <!--刷新-->
+    <color name="refresh_view_color">#FF5050</color>
+
+    <array name="tab_colors">
+        <item name="tab_1">#2877C6</item>
+        <item name="tab_2">#2877C6</item>
+        <item name="tab_3">#2877C6</item>
+    </array>
+
+</resources>

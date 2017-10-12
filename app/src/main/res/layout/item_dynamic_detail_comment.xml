@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.wiggins.teaching.ui.view.SelectableRoundedImageView
+        android:id="@+id/iv_dynamic_comment_avatar"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="25dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        app:sriv_oval="true"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/iv_dynamic_comment_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/iv_dynamic_comment_avatar"
+        android:layout_toRightOf="@+id/iv_dynamic_comment_avatar"
+        android:textColor="@color/blue"
+        android:layout_marginRight="5dp"
+        android:singleLine="true"
+        android:layout_toLeftOf="@+id/iv_dynamic_comment_time"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/iv_dynamic_comment_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_dynamic_comment_name"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="6dp"
+        android:layout_toEndOf="@+id/iv_dynamic_comment_avatar"
+        android:layout_toRightOf="@+id/iv_dynamic_comment_avatar"
+        android:lineSpacingExtra="6dp"
+        android:textColor="@color/gray_7c7c7c"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/iv_dynamic_comment_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/iv_dynamic_comment_avatar"
+        android:layout_marginRight="15dp"
+        android:text="@string/text_comment_time"
+        android:textColor="@color/dynamic_city_gray"
+        android:textSize="11sp" />
+
+    <include
+        layout="@layout/view_line"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_height="0.1dp"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

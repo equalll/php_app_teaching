@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">SingWa</string>
+    <string name="tab_1">新闻</string>
+    <string name="tab_2">推荐</string>
+    <string name="tab_3">我的</string>
+
+    <string name="menu_1">新闻</string>
+    <string name="menu_2">推荐</string>
+    <string name="menu_3">我的</string>
+
+    <!--网络请求失败提示语-->
+    <string name="tip_request_error">当前网络连接不稳定,请稍后再试</string>
+    <!--网络不可用失败语-->
+    <string name="tip_network_unavailable">当前网络不可用,请检查网络设置</string>
+    <!-- 服务器返回数据格式跟商定好的不一致 -->
+    <string name="tip_server_result_error">未获取到数据</string>
+    <!-- 网络链接超时 -->
+    <string name="tip_network_timeout">网络链接超时</string>
+    <string name="text_comment_time">%1$s分钟前</string>
+
+    <string name="dialog_confirm">确定</string>
+
+    <string name="hint_year">年</string>
+    <string name="hint_month">月</string>
+    <string name="hint_day">日</string>
+    <string name="hint_hour">时</string>
+    <string name="hint_minute">分</string>
+    <string name="hint_second">秒</string>
+
+    <string name="tip_version_checking">正在检测&#8230;</string>
+    <string name="tip_is_the_latest_version">已是最新版本</string>
+    <string name="tip_new_version">新版本</string>
+    <string name="dialog_text_loading">拼命加载中&#8230;</string>
+    <string name="dialog_update">更新</string>
+    <string name="dialog_cancel">取消</string>
+
+
+    <string-array name="hear_portrait">
+        <item name="pic_photograph">拍照</item>
+        <item name="pic_photo">相册</item>
+    </string-array>
+
+    <!-- 权限 -->
+    <string name="tip_permissions_camera_write_external_storage">要允许新闻app 进行拍照和访问您设备上的照片、媒体内容和文件吗？</string>
+    <string name="tip_permissions_loc_write_external_storage">要允许新闻app 获取位置信息、手机状态、媒体内容和文件吗？</string>
+    <string name="tip_permissions_loc_per">允许新闻app 获取位置信息吗？</string>
+    <string name="title_permissions_required">所需权限</string>
+    <string name="title_permissions_camera_required">拍照权限</string>
+    <string name="msg_no_permissions">如果没有请求的权限，此功能可能无法正常工作。打开应用程序设置以修改应用程序权限</string>
+    <string name="msg_no_audio_permissions">经检测您拒绝了录音权限，如果没有录音权限，则无法正常进行语音发送，请手动允许录音权限</string>
+    <string name="msg_no_camera_permissions">经检测您拒绝了拍照权限，如果没有拍照权限，则无法正常进行实名认证，请手动允许拍照权限</string>
+    <string name="msg_no_location_permissions">您未开启定位、读写手机权限，请前往手机【设置】开启权限</string>
+    <string name="msg_no_fate_location_permissions">您未打开所需权限，无法使用更多有趣的功能</string>
+
+    <string name="tip_upload">正在上传&#8230;</string>
+
+</resources>

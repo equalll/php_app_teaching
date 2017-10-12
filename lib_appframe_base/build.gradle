@@ -1,0 +1,41 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    buildToolsVersion rootProject.ext.android.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    androidTestCompile(rootProject.ext.dependencies.espresso, {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+
+    compile rootProject.ext.dependencies.supportV4
+    compile rootProject.ext.dependencies.appcompatV7
+    // 网络请求
+    compile rootProject.ext.dependencies.retrofit
+    compile rootProject.ext.dependencies.retrofit_gson
+    // 侧滑退出 Activity
+    compile rootProject.ext.dependencies.sideslipExitActivity
+    // 图片加载
+    compile rootProject.ext.dependencies.glide
+    // log打印工具
+    compile rootProject.ext.dependencies.logger
+    //view
+    compile rootProject.ext.dependencies.constraintLayout
+    //recyclerView
+    compile rootProject.ext.dependencies.recyclerView
+}
